@@ -1,5 +1,7 @@
 from collections import OrderedDict
 
+import sys
+
 mapping = OrderedDict()
 mapping['M'] = 1000
 mapping['D'] = 500
@@ -17,3 +19,11 @@ def arabic2roman(number) -> str:
         number %= k
 
     return result
+
+def main():
+    if len(sys.argv) < 2:
+        print('Please provide arabic number', file=sys.stderr)
+        exit(1)
+
+    arabic = int(sys.argv[1])
+    print(arabic2roman(arabic))
