@@ -4,11 +4,17 @@ import sys
 
 mapping = OrderedDict()
 mapping['M'] = 1000
+mapping['CM'] = 900
 mapping['D'] = 500
+mapping['CD'] = 400
 mapping['C'] = 100
+mapping['XC'] = 90
 mapping['L'] = 50
+mapping['XL'] = 40
 mapping['X'] = 10
+mapping['IX'] = 9
 mapping['V'] = 5
+mapping['IV'] = 4
 mapping['I'] = 1
 
 

@@ -1,1 +1,1 @@
-Roman numbers convertor
+Roman numbers converting library
