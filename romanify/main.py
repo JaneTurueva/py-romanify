@@ -18,7 +18,7 @@ mapping['IV'] = 4
 mapping['I'] = 1
 
 
-def arabic2roman(number: int) -> str:
+def romanify(number: int) -> str:
     if not isinstance(number, int):
         raise TypeError('Please provide positive integer')
 
@@ -39,4 +39,4 @@ def main():
         exit(1)
 
     arabic = int(sys.argv[1])
-    print(arabic2roman(arabic))
+    print(romanify(arabic))

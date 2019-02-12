@@ -65,9 +65,9 @@ Library usage
 -------------
 .. code-block:: shell
 
-    from romanify import arabic2roman
+    from romanify import romanify
 
-    print(arabic2roman(101))
+    print(romanify(101))
 
 
 Versioning
