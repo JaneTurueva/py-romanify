@@ -1,21 +1,21 @@
-from collections import OrderedDict
-
 import sys
 
-mapping = OrderedDict()
-mapping['M'] = 1000
-mapping['CM'] = 900
-mapping['D'] = 500
-mapping['CD'] = 400
-mapping['C'] = 100
-mapping['XC'] = 90
-mapping['L'] = 50
-mapping['XL'] = 40
-mapping['X'] = 10
-mapping['IX'] = 9
-mapping['V'] = 5
-mapping['IV'] = 4
-mapping['I'] = 1
+
+MAPPING = (
+    ('M', 1000),
+    ('CM', 900),
+    ('D', 500),
+    ('CD', 400),
+    ('C', 100),
+    ('XC', 90),
+    ('L', 50),
+    ('XL', 40),
+    ('X', 10),
+    ('IX', 9),
+    ('V', 5),
+    ('IV', 4),
+    ('I', 1),
+)
 
 
 def romanify(number: int) -> str:
@@ -26,9 +26,9 @@ def romanify(number: int) -> str:
         raise ValueError('Please provide positive integer')
 
     result = ''
-    for i,k in mapping.items():
-        result += (i * (number // k))
-        number %= k
+    for char, value in MAPPING:
+        result += (char * (number // value))
+        number %= value
 
     return result
 
