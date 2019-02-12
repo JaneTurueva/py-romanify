@@ -1,5 +1,5 @@
 romanify
-====
+========
 
 .. image:: https://coveralls.io/repos/github/JaneTurueva/py-romanify/badge.svg?branch=master
     :target: https://coveralls.io/github/JaneTurueva/py-romanify?branch=master
